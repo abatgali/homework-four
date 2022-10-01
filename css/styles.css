@@ -1,0 +1,277 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: "Gill Sans", sans-serif;
+}
+html a, body a {
+  text-decoration: none;
+  color: white;
+}
+html h1, body h1 {
+  font-family: "Proxima Nova";
+  font-size: 60px;
+}
+html .button, body .button {
+  padding: 1em;
+  background-color: #79ADDC;
+  display: inline-block;
+  color: white;
+}
+html .learn-more, body .learn-more {
+  padding: 1em;
+  background-color: #79ADDC;
+  display: inline-block;
+  color: white;
+  border-radius: 30px;
+}
+
+.site-container {
+  max-width: 100%;
+  margin: 0 auto;
+  min-height: 500px;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(/app/fonts/Proxima-Nova-Thin.otf);
+}
+@font-face {
+  font-family: "Proxima Nova Condensed";
+  src: url(/app/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+nav {
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 2px solid white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+nav .company {
+  width: 92px;
+  height: 42px;
+}
+nav div {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 42px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  nav {
+    max-width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 1em;
+  }
+  nav #links {
+    margin: 0 auto;
+    font-size: small;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+.hero {
+  height: 500px;
+  width: 100%;
+  background-image: url(../images/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+.hero .details {
+  padding: 3em;
+}
+.hero p {
+  font-style: italic;
+  width: 40%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .hero p {
+    width: 70%;
+  }
+}
+.tours {
+  position: relative;
+  top: -30px;
+  margin: 0 auto;
+  width: 800px;
+  text-align: left;
+}
+.tours .cards {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 55px;
+  font-family: "Proxima Nova Condensed";
+  text-align: center;
+  font-weight: bold;
+}
+.tours .cards .card {
+  height: 304px;
+  width: 236px;
+}
+.tours .cards #first {
+  background-image: url(../images/special-offer-01.jpg);
+  background-size: cover;
+}
+.tours .cards #second {
+  background-image: url(../images/special-offer-02.jpg);
+  background-size: cover;
+}
+.tours .cards #third {
+  background-image: url(../images/tour/tour-02.jpg);
+  background-size: cover;
+}
+.tours form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 3em;
+}
+.tours form input, .tours form textarea {
+  padding: 1em;
+  border: 1px solid #79ADDC;
+  margin: 20px 0 0 0;
+}
+.tours form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.tours form #first-four-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+.tours form #first-four-inputs input {
+  width: 45%;
+}
+.tours form input[type=date] {
+  width: 80%;
+  margin-left: auto;
+}
+.tours form input[type=submit] {
+  background-color: #79ADDC;
+  color: white;
+  border-radius: 20px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 700px) {
+  .tours {
+    width: 100%;
+  }
+  .tours .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1em auto 1em;
+    width: 60%;
+    gap: 10px;
+  }
+  .tours form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+  }
+  .tours form input {
+    width: 75%;
+    margin: 0.5em auto 0;
+  }
+  .tours form #first-four-inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+  .tours h1 {
+    font-size: xx-large;
+    text-align: center;
+  }
+}
+@media screen and (max-device-width: 810px) and (-webkit-min-device-pixel-ratio: 1) {
+  .tours {
+    width: 100%;
+  }
+  .tours .cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    gap: 10px;
+    margin: 1em auto;
+  }
+}
+footer {
+  padding: 1em;
+  background-color: #79ADDC;
+  color: white;
+}
+footer .footer-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: small;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+  .footer-items {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1em;
+  }
+}

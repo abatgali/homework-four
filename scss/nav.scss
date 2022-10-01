@@ -1,0 +1,49 @@
+nav {
+
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    align-items: center;
+
+    .company {
+        width: 92px;
+        height: 42px;
+        
+    }
+
+    div {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+        height: 42px;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+ { 
+
+    h1 {
+        font-size: 45px ;
+    }
+
+
+    nav {
+        max-width: 100%;
+        flex-direction: column;
+        padding-top: 1em;
+
+        #links {
+            margin: 0 auto;
+            font-size: small;
+            justify-content: space-around;
+        }
+    }
+
+
+}
